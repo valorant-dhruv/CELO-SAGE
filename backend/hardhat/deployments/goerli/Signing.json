@@ -1,0 +1,161 @@
+{
+  "address": "0x8cc9CBc04cBE35311cE4E0745c1C25921C5DbA13",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_message",
+          "type": "string"
+        }
+      ],
+      "name": "getMessageHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_message",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getSignedEthMessageHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "_ethSignedMessageHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_signature",
+          "type": "bytes"
+        }
+      ],
+      "name": "recoverSigner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "sig",
+          "type": "bytes"
+        }
+      ],
+      "name": "splitSignature",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "r",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "s",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint8",
+          "name": "v",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_sender",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "_message",
+          "type": "string"
+        },
+        {
+          "internalType": "bytes",
+          "name": "hash",
+          "type": "bytes"
+        }
+      ],
+      "name": "verify",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xbde44de6bc2090ec74dcdb07fd67cebba139e0e7bff9f23d021dc4fa85571860",
+  "receipt": {
+    "to": null,
+    "from": "0xC003DB27051D7fA33717b4570ACd9BBa4984aDe5",
+    "contractAddress": "0x8cc9CBc04cBE35311cE4E0745c1C25921C5DbA13",
+    "transactionIndex": 54,
+    "gasUsed": "344680",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x65dedfc47d74e825fc41092ab1bfaa64f9edf597ce1e57be7b0e930e9d9dd50c",
+    "transactionHash": "0xbde44de6bc2090ec74dcdb07fd67cebba139e0e7bff9f23d021dc4fa85571860",
+    "logs": [],
+    "blockNumber": 8451898,
+    "cumulativeGasUsed": "6973748",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "b72c42d015449e27c66cfe82bf0bb2a6",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_message\",\"type\":\"string\"}],\"name\":\"getMessageHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_message\",\"type\":\"bytes32\"}],\"name\":\"getSignedEthMessageHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_ethSignedMessageHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"_signature\",\"type\":\"bytes\"}],\"name\":\"recoverSigner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"sig\",\"type\":\"bytes\"}],\"name\":\"splitSignature\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"r\",\"type\":\"bytes32\"},{\"internalType\":\"bytes32\",\"name\":\"s\",\"type\":\"bytes32\"},{\"internalType\":\"uint8\",\"name\":\"v\",\"type\":\"uint8\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_sender\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_message\",\"type\":\"string\"},{\"internalType\":\"bytes\",\"name\":\"hash\",\"type\":\"bytes\"}],\"name\":\"verify\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Signing.sol\":\"Signing\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Signing.sol\":{\"content\":\"//SPDX-License-Identifier:MIT\\r\\n\\r\\npragma solidity >=0.5.0 <0.9.0;\\r\\n\\r\\n//This is the contract address\\r\\n//0xFB295f887882beEC3FE11dEa259E59D237914A08\\r\\n\\r\\n//This is the link\\r\\n//\\r\\n\\r\\n\\r\\ncontract Signing{\\r\\n\\r\\n    //This is the verify function which takes three inputs\\r\\n    //1-) The address of the message signer\\r\\n    //2-)The message that was signed by the signer\\r\\n    //3-) The hash of the signed message\\r\\n\\r\\n    function verify(address _sender,string memory _message,bytes memory hash) external pure returns(bool)\\r\\n    {\\r\\n        //Now from the following two functions we are obtaining the hashed message that was signed by the signer off chain\\r\\n        bytes32 signedMessagehash=getMessageHash(_message);\\r\\n        bytes32 signedEthMessagehash=getSignedEthMessageHash(signedMessagehash);\\r\\n\\r\\n        // The signedEthMessagehash is the message that was signed off chain by the sender of the message\\r\\n\\r\\n        //Now we once we have the signed message and the signature we can create a verify function to get the signer\\r\\n        bool isit=recoverSigner(signedEthMessagehash,hash)==_sender;\\r\\n        require(isit,\\\"There was some problem in signing the smart contract\\\");\\r\\n        return isit;\\r\\n    }\\r\\n\\r\\n    function getMessageHash(string memory _message) public pure returns(bytes32)\\r\\n    {\\r\\n        return keccak256(abi.encodePacked(_message));\\r\\n    }\\r\\n\\r\\n    function getSignedEthMessageHash(bytes32 _message) public pure returns(bytes32)\\r\\n    {\\r\\n        return keccak256(abi.encodePacked(\\\"\\\\x19Ethereum Signed Message:\\\\n32\\\",_message));\\r\\n    }\\r\\n\\r\\n    function recoverSigner(bytes32 _ethSignedMessageHash, bytes memory _signature)\\r\\n        public\\r\\n        pure\\r\\n        returns (address)\\r\\n    {\\r\\n        (bytes32 r, bytes32 s, uint8 v) = splitSignature(_signature);\\r\\n\\r\\n        return ecrecover(_ethSignedMessageHash, v, r, s);\\r\\n    }\\r\\n\\r\\n    function splitSignature(bytes memory sig)\\r\\n        public\\r\\n        pure\\r\\n        returns (\\r\\n            bytes32 r,\\r\\n            bytes32 s,\\r\\n            uint8 v\\r\\n        )\\r\\n    {\\r\\n        require(sig.length == 65, \\\"invalid signature length\\\");\\r\\n\\r\\n        assembly {\\r\\n            /*\\r\\n            First 32 bytes stores the length of the signature\\r\\n\\r\\n            add(sig, 32) = pointer of sig + 32\\r\\n            effectively, skips first 32 bytes of signature\\r\\n\\r\\n            mload(p) loads next 32 bytes starting at the memory address p into memory\\r\\n            */\\r\\n\\r\\n            // first 32 bytes, after the length prefix\\r\\n            r := mload(add(sig, 32))\\r\\n            // second 32 bytes\\r\\n            s := mload(add(sig, 64))\\r\\n            // final byte (first byte of the next 32 bytes)\\r\\n            v := byte(0, mload(add(sig, 96)))\\r\\n        }\\r\\n\\r\\n        // implicitly return (r, s, v)\\r\\n    }\\r\\n}\",\"keccak256\":\"0xf4e172025d5ad1e4265fe8049c46d2da4d22268aa8ce8def3a71a764288652ec\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610546806100206000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80632dd34f0f1461005c57806382df657d1461008457806397aba7f9146100a5578063a7bb5803146100d0578063b446f3b214610101575b600080fd5b61006f61006a3660046103ab565b610114565b60405190151581526020015b60405180910390f35b610097610092366004610429565b6101ca565b60405190815260200161007b565b6100b86100b3366004610441565b61021e565b6040516001600160a01b03909116815260200161007b565b6100e36100de366004610486565b61029d565b60408051938452602084019290925260ff169082015260600161007b565b61009761010f366004610486565b610311565b60008061012084610311565b9050600061012d826101ca565b90506000866001600160a01b0316610145838761021e565b6001600160a01b0316149050806101c05760405162461bcd60e51b815260206004820152603460248201527f54686572652077617320736f6d652070726f626c656d20696e207369676e696e60448201527319c81d1a19481cdb585c9d0818dbdb9d1c9858dd60621b60648201526084015b60405180910390fd5b9695505050505050565b6040517f19457468657265756d205369676e6564204d6573736167653a0a3332000000006020820152603c8101829052600090605c015b604051602081830303815290604052805190602001209050919050565b60008060008061022d8561029d565b6040805160008152602081018083528b905260ff8316918101919091526060810184905260808101839052929550909350915060019060a0016020604051602081039080840390855afa158015610288573d6000803e3d6000fd5b5050604051601f190151979650505050505050565b600080600083516041146102f35760405162461bcd60e51b815260206004820152601860248201527f696e76616c6964207369676e6174757265206c656e677468000000000000000060448201526064016101b7565b50505060208101516040820151606090920151909260009190911a90565b60008160405160200161020191906104c1565b600082601f830112610334578081fd5b813567ffffffffffffffff8082111561034f5761034f6104fa565b604051601f8301601f19908116603f01168101908282118183101715610377576103776104fa565b8160405283815286602085880101111561038f578485fd5b8360208701602083013792830160200193909352509392505050565b6000806000606084860312156103bf578283fd5b83356001600160a01b03811681146103d5578384fd5b9250602084013567ffffffffffffffff808211156103f1578384fd5b6103fd87838801610324565b93506040860135915080821115610412578283fd5b5061041f86828701610324565b9150509250925092565b60006020828403121561043a578081fd5b5035919050565b60008060408385031215610453578182fd5b82359150602083013567ffffffffffffffff811115610470578182fd5b61047c85828601610324565b9150509250929050565b600060208284031215610497578081fd5b813567ffffffffffffffff8111156104ad578182fd5b6104b984828501610324565b949350505050565b60008251815b818110156104e157602081860181015185830152016104c7565b818111156104ef5782828501525b509190910192915050565b634e487b7160e01b600052604160045260246000fdfea2646970667358221220bbe495c89b64a6307053ab5f26196295dd30daaa83d81fc7c07791f09630fbde64736f6c63430008040033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80632dd34f0f1461005c57806382df657d1461008457806397aba7f9146100a5578063a7bb5803146100d0578063b446f3b214610101575b600080fd5b61006f61006a3660046103ab565b610114565b60405190151581526020015b60405180910390f35b610097610092366004610429565b6101ca565b60405190815260200161007b565b6100b86100b3366004610441565b61021e565b6040516001600160a01b03909116815260200161007b565b6100e36100de366004610486565b61029d565b60408051938452602084019290925260ff169082015260600161007b565b61009761010f366004610486565b610311565b60008061012084610311565b9050600061012d826101ca565b90506000866001600160a01b0316610145838761021e565b6001600160a01b0316149050806101c05760405162461bcd60e51b815260206004820152603460248201527f54686572652077617320736f6d652070726f626c656d20696e207369676e696e60448201527319c81d1a19481cdb585c9d0818dbdb9d1c9858dd60621b60648201526084015b60405180910390fd5b9695505050505050565b6040517f19457468657265756d205369676e6564204d6573736167653a0a3332000000006020820152603c8101829052600090605c015b604051602081830303815290604052805190602001209050919050565b60008060008061022d8561029d565b6040805160008152602081018083528b905260ff8316918101919091526060810184905260808101839052929550909350915060019060a0016020604051602081039080840390855afa158015610288573d6000803e3d6000fd5b5050604051601f190151979650505050505050565b600080600083516041146102f35760405162461bcd60e51b815260206004820152601860248201527f696e76616c6964207369676e6174757265206c656e677468000000000000000060448201526064016101b7565b50505060208101516040820151606090920151909260009190911a90565b60008160405160200161020191906104c1565b600082601f830112610334578081fd5b813567ffffffffffffffff8082111561034f5761034f6104fa565b604051601f8301601f19908116603f01168101908282118183101715610377576103776104fa565b8160405283815286602085880101111561038f578485fd5b8360208701602083013792830160200193909352509392505050565b6000806000606084860312156103bf578283fd5b83356001600160a01b03811681146103d5578384fd5b9250602084013567ffffffffffffffff808211156103f1578384fd5b6103fd87838801610324565b93506040860135915080821115610412578283fd5b5061041f86828701610324565b9150509250925092565b60006020828403121561043a578081fd5b5035919050565b60008060408385031215610453578182fd5b82359150602083013567ffffffffffffffff811115610470578182fd5b61047c85828601610324565b9150509250929050565b600060208284031215610497578081fd5b813567ffffffffffffffff8111156104ad578182fd5b6104b984828501610324565b949350505050565b60008251815b818110156104e157602081860181015185830152016104c7565b818111156104ef5782828501525b509190910192915050565b634e487b7160e01b600052604160045260246000fdfea2646970667358221220bbe495c89b64a6307053ab5f26196295dd30daaa83d81fc7c07791f09630fbde64736f6c63430008040033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [],
+    "types": null
+  }
+}

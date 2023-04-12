@@ -1,0 +1,87 @@
+{
+  "address": "0x2ECCB4caa2Fe74125CF4b6864f004525F2B2BC71",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_address",
+          "type": "address"
+        }
+      ],
+      "name": "storeaddress",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xf1670732823f89961befb1943ad82bf9765210b95ce9f275d5b800c580c3ae43",
+  "receipt": {
+    "to": null,
+    "from": "0xC003DB27051D7fA33717b4570ACd9BBa4984aDe5",
+    "contractAddress": "0x2ECCB4caa2Fe74125CF4b6864f004525F2B2BC71",
+    "transactionIndex": 68,
+    "gasUsed": "99021",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xd37e0b3668b08fd0b237a17c94e6aaa5fc76f20452c51c263ea6811bee67db50",
+    "transactionHash": "0xf1670732823f89961befb1943ad82bf9765210b95ce9f275d5b800c580c3ae43",
+    "logs": [],
+    "blockNumber": 8577404,
+    "cumulativeGasUsed": "7336666",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "7763245783469fd941692eb2e58d4052",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_address\",\"type\":\"address\"}],\"name\":\"storeaddress\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Storeaccounts.sol\":\"Storeaccounts\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Storeaccounts.sol\":{\"content\":\"//SPDX-License-Identifer:MIT\\r\\n\\r\\npragma solidity >=0.5.0 <0.9.0;\\r\\n\\r\\ncontract Storeaccounts{\\r\\n    //Now this is the smart contract that will be deployed and here we will store all the addresses that have signed up yet\\r\\n\\r\\n    mapping(address=>bool) private storeaddresses;\\r\\n    function storeaddress(address _address) external returns(bool)\\r\\n    {\\r\\n        storeaddresses[_address]=true;\\r\\n    }\\r\\n\\r\\n\\r\\n}\",\"keccak256\":\"0x6c0bd79824b812e3f860acc8b2f248bc0842e24a210fc247c2a4d040049669a6\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060d38061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80630b58370e14602d575b600080fd5b605d60383660046071565b6001600160a01b03166000908152602081905260408120805460ff1916600117905590565b604051901515815260200160405180910390f35b6000602082840312156081578081fd5b81356001600160a01b03811681146096578182fd5b939250505056fea2646970667358221220b8796ec6ef320723362128cfe1d680c597eeca5f61193ba7ae555adfd1817f7764736f6c63430008040033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80630b58370e14602d575b600080fd5b605d60383660046071565b6001600160a01b03166000908152602081905260408120805460ff1916600117905590565b604051901515815260200160405180910390f35b6000602082840312156081578081fd5b81356001600160a01b03811681146096578182fd5b939250505056fea2646970667358221220b8796ec6ef320723362128cfe1d680c597eeca5f61193ba7ae555adfd1817f7764736f6c63430008040033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 642,
+        "contract": "contracts/Storeaccounts.sol:Storeaccounts",
+        "label": "storeaddresses",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_address,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      }
+    }
+  }
+}

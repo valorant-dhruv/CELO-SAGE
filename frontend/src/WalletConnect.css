@@ -1,0 +1,18 @@
+/* Set black background with linear gradient */
+body {
+    background: linear-gradient(to bottom, #000000, #1a1a1a);
+  }
+  
+  /* Center the contents of the walletconnect div */
+  .walletconnect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Add spacing between the components inside the walletconnect div */
+  .walletconnect > * + * {
+    margin-top: 1em;
+  }
